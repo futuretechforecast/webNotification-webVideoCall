@@ -1,0 +1,29 @@
+header {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.about-section {
+  padding: 20px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 15px 0;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  font-weight: bold;  
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.card-content {
+  font-size: 1rem;
+  color: #555;
+}

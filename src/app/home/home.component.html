@@ -1,0 +1,128 @@
+<div class="home-page">
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">Matrimony</div>
+        <nav>
+            <ul>
+                <li><a routerLink="/home">Home</a></li>
+                <li><a routerLink="/about">About Us</a></li>
+                <li><a routerLink="/plans">Plans</a></li>
+                <li><a routerLink="/stories">Success Stories</a></li>
+                <li><a routerLink="/contact">Contact Us</a></li>
+                <li><a routerLink="/help">Help</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <button>Login</button>
+            <button class="call" (click)="toggleCallOptions()">Call</button>
+        </div>
+
+        <div class="call-options" *ngIf="showOptions">
+            <button class="call-button audio" (click)="startAudioCall()">🎧 Audio Call</button>
+            <button class="call-button video" (click)="startVideoCall()">📹 Video Call</button>
+        </div>
+
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Find Your Perfect Match</h1>
+            <p>Join millions of singles seeking their life partners.</p>
+            <form class="search-bar">
+                <select>
+                    <option>I'm looking for</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Other</option>
+                </select>
+                <select>
+                    <option>Age Range</option>
+                    <option>18-25</option>
+                    <option>26-35</option>
+                    <option>36-45</option>
+                </select>
+                <select>
+                    <option>Religion</option>
+                    <option>Hindu</option>
+                    <option>Christian</option>
+                    <option>Muslim</option>
+                    <option>Sikh</option>
+                </select>
+                <select>
+                    <option>Location</option>
+                    <option>USA</option>
+                    <option>India</option>
+                    <option>UK</option>
+                </select>
+                <button type="submit">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-search" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.346 1.346l3.155 3.155a1 1 0 0 0 1.415-1.415l-3.155-3.155zm-5.465-.811a5 5 0 1 1 0-10 5 5 0 0 1 0 10z" />
+                    </svg>
+                    Search
+                </button>
+
+            </form>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="feature">
+            <i class="icon">🔒</i>
+            <h3>Verified Profiles</h3>
+            <p>Ensuring authenticity with each profile.</p>
+        </div>
+        <div class="feature">
+            <i class="icon">💌</i>
+            <h3>Match Recommendations</h3>
+            <p>Personalized matches for better compatibility.</p>
+        </div>
+        <div class="feature">
+            <i class="icon">🔐</i>
+            <h3>Privacy</h3>
+            <p>Your information is secure with us.</p>
+        </div>
+        <div class="feature">
+            <i class="icon">✨</i>
+            <h3>Easy to Use</h3>
+            <p>Simple and user-friendly interface.</p>
+        </div>
+    </section>
+
+    <!-- Success Stories Section -->
+    <section class="success-stories">
+        <h2>Love Stories That Inspire</h2>
+        <div class="stories">
+            <div class="story">
+                <img src="couple1.jpg" alt="Couple 1">
+                <p>"We found love, thanks to Matrimony!" - John & Jane</p>
+            </div>
+            <div class="story">
+                <img src="couple2.jpg" alt="Couple 2">
+                <p>"A perfect match that changed our lives." - Alex & Sarah</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#">About Us</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Contact Us</a>
+            </div>
+            <div class="social-media">
+                <i class="icon">🌐</i>
+                <i class="icon">📘</i>
+                <i class="icon">🐦</i>
+            </div>
+        </div>
+        <p>© 2024 Matrimony, All rights reserved.</p>
+    </footer>
+</div>
